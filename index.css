@@ -1,21 +1,23 @@
 
 
-button {
-    width: 50%;
-    height: 20%;
-    padding: 15px 30px;
+.button {
+    width: 100px;
+    height: 45px;
     border-radius: 5px;
     box-shadow: .5px .5px 1px 2px #8b8b8b;
     background:rgb(183, 214, 248);
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-button:hover{
+.button:hover{
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 .main{
     padding: 2%;
-    margin: 3%;
     padding-top: 5%;
     border-radius: 20px;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -36,22 +38,20 @@ button:hover{
 	}
 }
 
-a {
-    text-decoration: none;
-    color: black;
-    font-size: larger;
-}
-
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   font-size: 80px;
 }
 
 p {
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-@font-face {
-    font-family: 'Baloo 2', cursive;
-    src: url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap');
+.page {
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 10px solid;
+    border-bottom: 10px solid;
 }

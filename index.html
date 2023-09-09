@@ -9,10 +9,29 @@
 <body>
 
     <div class="main">
-        <center><h1>WELOME</h1></center>
-        <center>hello guys</center>
-        <center><button><a href="main.html">Lets Go!</a></button></center>
-    </div>
+        <h1>WELOME,</h1>
+        <div class="page">
+        <p>To my demo</p><br>
+        <button onclick="typeWriter()">Click me</button>
 
+<p id="demo"></p>
+</div><br><br>
+
+
+<a href="main.html"><button class="button">Lets Go!</button></a>
+    </div>
+    <script>
+        var i = 0;
+        var txt = 'click on "lets go" button below for more things like this type effect';
+        var speed = 60;
+        
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+        </script>
 </body>
 </html>
