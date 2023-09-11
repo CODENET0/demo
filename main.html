@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="display.js"></script>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <p>NAME: <span id="result-name"></span></p>
+    <h1>EXPLORE!</h1>
+    <div class="explore">
+        <fieldset>
+            <legend>Your Device information</legend> 
+            APP NAME: <span id="appname"></span><br>
+            APP VERSION: <span id="appver"></span><br>
+            ONLINE: <span id="app"></span>
+        </fieldset>
+        <details>
+            <summary>JS BOM Navigator...</summary>
+            <kbd>get information about your browser...</kbd>
+        </details>
+    </div><br>
+    <div class="explore">
+        <fieldset>
+            <legend>Gradients</legend>
+            <button><a href="gradients.html">GO THERE!</a></button>
+            <details>
+                <summary>Info...</summary>
+                <kbd>My fav Gradients...</kbd>
+            </details>
+        </fieldset>
+    </div>
+    <script>
+        document.getElementById("appname").innerHTML=navigator.appName
+        document.getElementById("appver").innerHTML=navigator.appVersion
+        document.getElementById("app").innerHTML=navigator.onLine
+    </script>
 </body>
 </html>

@@ -1,0 +1,13 @@
+.explore {
+    padding: 10px;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    border-radius: 15px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 10px solid;
+    border-bottom: 10px solid;
+}
+
+body{
+    background: linear-gradient(270deg, rgb(14, 2, 252) 0%, rgba(0,212,255,1) 100%);
+}
